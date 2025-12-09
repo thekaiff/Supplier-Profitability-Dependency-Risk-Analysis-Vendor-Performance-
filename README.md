@@ -1,10 +1,10 @@
-#📊 Supplier Profitability & Dependency Risk Analysis (Vendor Performance)
+# 📊 Supplier Profitability & Dependency Risk Analysis (Vendor Performance)
 
 **Industry:** Retail / Wholesale — Inventory & Procurement Optimization
 
 ---
 
-##🧠 Executive summary
+## 🧠 Executive summary
 
 Companies frequently lose margin and cash when inventory, pricing and vendor relationships are not managed together. This project — *Supplier Profitability & Dependency Risk Analysis (Vendor Performance)* — analyzes purchases, sales, inventory and vendor invoices to identify where cash is tied up, which vendors drive revenue, and where pricing or inventory action will move the needle.
 
@@ -24,7 +24,7 @@ Companies frequently lose margin and cash when inventory, pricing and vendor rel
 
 ---
 
-##❗ Business problem
+## ❗ Business problem
 
 Retail/wholesale businesses face three linked problems:
 
@@ -60,7 +60,7 @@ I ingested these into a local SQLite DB and created a consolidated `vendor_sales
 
 ---
 
-##🛠️ Methodology (brief)
+## 🛠️ Methodology (brief)
 
 * **Data engineering:** SQL CTEs to join purchase, sales, price and freight; read into Pandas, cleanup, and save a `vendor_sales_summary` CSV + write-back to SQLite.
 * **Exploratory analysis:** distributions, boxplots, and outlier checks to understand price and margin spread.
@@ -72,7 +72,7 @@ I ingested these into a local SQLite DB and created a consolidated `vendor_sales
 
 ---
 
-##🧩 Skills & tools used
+## 🧩 Skills & tools used
 
 * **Languages:** Python (pandas, numpy, scipy, matplotlib)
 * **Database:** SQLite
@@ -81,7 +81,7 @@ I ingested these into a local SQLite DB and created a consolidated `vendor_sales
 
 ---
 
-##📈 Results — Key findings (actionable & quantified)
+## 📈 Results — Key findings (actionable & quantified)
 
 1. **Bulk purchase advantage:** Large-order buyers pay significantly less per unit vs Small buyers — observed **~72%** reduction in unit purchase price between Small and Large order bins. Recommendation: implement tiered bulk discounts and enforce minimum economic order quantities for SKUs with stable demand.
 
@@ -105,7 +105,7 @@ I ingested these into a local SQLite DB and created a consolidated `vendor_sales
 
 ---
 
-##🧮 How I Measured Key Metrics (Python & DAX)
+## 🧮 How I Measured Key Metrics (Python & DAX)
 
 This section highlights the core logic behind the most important calculations used throughout the project.
 
@@ -154,7 +154,7 @@ Is Top 10 Vendor = IF([Vendor Rank] <= 10, 1, 0)
 
 ---
 
-##⚠️ Limitations
+## ⚠️ Limitations
 
 * Analysis relies on historical transactional data; seasonality or one-off promotions can skew turnover and margin estimates.
 * Purchase price master and freight allocation assumed matching by brand — imperfect mapping can introduce noise.
@@ -162,7 +162,7 @@ Is Top 10 Vendor = IF([Vendor Rank] <= 10, 1, 0)
 
 ---
 
-##💡 What I learned
+## 💡 What I learned
 
 * Building a single source of truth (`vendor_sales_summary`) that blends purchases, sales, pricing and freight is critical to meaningful vendor-level analytics.
 * Small modeling choices (sorting axis, cumulative measures) dramatically change visualization behavior; always validate measures against a trusted simple script (I compared every visual to a Python plot).
@@ -170,7 +170,7 @@ Is Top 10 Vendor = IF([Vendor Rank] <= 10, 1, 0)
 
 ---
 
-##v➡️ Next steps (recommended)
+## ➡️ Next steps (recommended)
 
 1. **Automate ingestion:** schedule the SQLite ingestion and a refresh for Power BI so buyers see near-real-time numbers.
 2. **Pricing experiments:** run A/B promotions on 5–10 low-volume high-margin brands and measure lift and margin impact.
@@ -179,11 +179,11 @@ Is Top 10 Vendor = IF([Vendor Rank] <= 10, 1, 0)
 
 ---
 
-##🔍 Final findings
+## 🔍 Final findings
 
 High-margin vendors may benefit from better pricing strategies, while top-selling vendors could focus on cost efficiency.
 
-**🚀 Final Recommendations (summary):**
+** 🚀 Final Recommendations (summary):**
 
 * Re-evaluate pricing for low-sales, high-margin brands to boost sales volume without sacrificing profitability.
 * Diversify vendor partnerships to reduce dependency on a few suppliers and mitigate supply chain risks.
@@ -195,7 +195,7 @@ By implementing these recommendations, the company can achieve sustainable profi
 
 ---
 
-##👋 Contact
+## 👋 Contact
 
 If you’d like to discuss the code, the dashboard, reach out on GitHub or email (kaifsdkpro@gmail.com).
 
