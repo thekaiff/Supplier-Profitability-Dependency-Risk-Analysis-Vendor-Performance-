@@ -199,6 +199,8 @@ By implementing these recommendations, the company can achieve sustainable profi
 
 If you’d like to discuss the code, the dashboard, reach out on GitHub or email (kaifsdkpro@gmail.com).
 
----
+⭐ **If you found this project insightful, don’t forget to star ⭐ this repository!**  
+📬 *Let’s connect on [LinkedIn](https://www.linkedin.com/in/kaifsayed57/)
+ — open to data analyst and Excel-based analytics roles.
 
 *Made with ❤️ — Kaif Anis Sayed*
