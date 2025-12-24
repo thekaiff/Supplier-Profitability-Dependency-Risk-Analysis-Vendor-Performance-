@@ -1,4 +1,4 @@
-# 📊 Supplier Profitability & Dependency Risk Analysis (Vendor Performance)
+# 📊 Supplier Profitability & Dependency Risk Analysis
 
 **Industry:** Retail / Wholesale — Inventory & Procurement Optimization
 
