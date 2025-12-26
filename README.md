@@ -277,7 +277,7 @@ Combining descriptive BI with statistical validation ensured insights were not o
   <li>Extend supplier scorecards with delivery reliability and quality metrics.</li>
 </ul>
 
-    </td>
+  </td>
   </tr>
 </table>
 
